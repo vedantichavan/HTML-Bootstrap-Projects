@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!---------------------------------Bootstrap Links-------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!---------------------------------Css stylesheet---------------------------------->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!---------------------------------Icons---------------------------------------------->
+    <script src="https://kit.fontawesome.com/423782bad3.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation links -->
+
+
+    <!--------Owl carousel------------->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+
+
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light " id="navbar-id">
+                <div class="container-fluid ">
+                    <a class="navbar-brand ml-10" href="#">Kerala Hut</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+          
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto justify-content-center">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-id">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Special</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                </ul>
+                <button type="button" class="btn btn-restaurant ml-10">BOOK A TABLE</button>
+                </div>
+                </div>
+            </nav>
+        </div>  
+        
+        <!--<div class="container main-page" id="main-id">
+            <div class="row">
+                <div class="col-md-12 mt-15 mt-xs-2">
+                    <h1 class="header">Welcome to</h1>
+                    <h1 class="title">Kerala Hut</h1>
+                    <h5>Experience the Essence of Kerala: Where Every Bite Feels Like Home!</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-3">
+                    <button type="button" class="btn btn-restaurant mr-3">OUR MENU</button>
+                    <button type="button" class="btn btn-restaurant ml-1 mr-1">BOOK A TABLE</button>
+                </div>
+            </div>
+    
+        </div>-->
+    </header>
+    <!------------====================Navbar end====================--------------->
+    <!-----------------------------------------Menu--------------------------------->
+ <!-- ======= Menu Section ======= -->
+ <section id="menu" class="menu section-bg" >
+    <div class="container pb-5" data-aos="fade-up"
+    data-aos-duration="1500">
+
+        <h5 class="sub-heading pt-8">MENU</h5>
+        <h1 class="heading pb-5">Check Our Tasty Menu</h1>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="menu-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-starters">Starters</li>
+            <li data-filter=".filter-mains">Mains</li>
+            <li data-filter=".filter-specialty">Snacks/Drinks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <!--------------Starters-------------------------------->
+        <div class="col-lg-6 menu-item filter-starters">
+          <img src="images/menu/thatte-idli.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Thatte Idli</a><span>Rs. 50</span>
+          </div>
+          <div class="menu-ingredients">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-starters">
+            <img src="images/menu/appam.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Appam</a><span>Rs. 50</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-starters">
+            <img src="images/menu/malabar-dosa.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Malabar Dosa</a><span>Rs. 50</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+        </div>
+        <!-------------Main-------------------------------->
+        
+
+        <div class="col-lg-6 menu-item filter-mains">
+          <img src="images/menu/appam-veg-stew.jpg" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Appam with Veg Stew</a><span>$8.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-mains">
+            <img src="images/menu/appam-chicken.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Appam with Chicken Curry</a><span>Rs. 70</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach, crisp romaine, tomatoes, and Greek olives
+            </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-mains">
+            <img src="images/menu/parrotta-stew-veg.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Malabar Parotta with Veg Stew</a><span>Rs. 90</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+            </div>
+          </div>
+          <div class="col-lg-6 menu-item filter-mains">
+            <img src="images/menu/parrotta-chicken-curry.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Malabar Parotta with Chicken Curry</a><span>Rs. 140</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-mains">
+            <img src="images/menu/veg-biryani.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Malabar Veg Biryani Full</a><span>Rs. 250</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-mains">
+            <img src="images/menu/veg-biryani.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Malabar Veg Biryani 1Kg</a><span>Rs. 700</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-mains">
+            <img src="images/biryani.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Malabar Chicken Biryani Full</a><span>Rs. 320</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-mains">
+          <img src="images/biryani.png" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Malabar Chicken Biryani 1Kg</a><span>Rs. 1000</span>
+          </div>
+          <div class="menu-ingredients">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+      </div>
+
+        <!---------------------Snacks/drinks---------------------------->
+
+        <div class="col-lg-6 menu-item filter-specialty">
+            <img src="images/menu/banana-chips.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Banana Chips</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+            </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-specialty">
+            <img src="images/menu/tea.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Tea</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+            </div>
+        </div>
+        
+        <div class="col-lg-6 menu-item filter-specialty">
+            <img src="images/menu/coffee.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Filter Coffee</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+            </div>
+        </div>
+        <div class="col-lg-6 menu-item filter-specialty">
+            <img src="images/menu/black-tea.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Black Tea with Mint and Lemon</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+            </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Menu Section -->
+
+<!-----------------------------------------Menu end-------------------------------->
+<!--------------------------------------Specials-------------------------------------->
+<section id="specials-id" >
+    <div class="container" data-aos="fade-up"
+    data-aos-duration="1500">
+        <h5 class="sub-heading pt-8">Specials</h5>
+        <h1 class="heading pb-5">Check Our Specials</h1>
+        <div class="row pb-8">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#tab-1" role="tab" aria-controls="v-pills-home" aria-selected="true">Specials-1</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#tab-2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Specials-2</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#tab-3" role="tab" aria-controls="v-pills-messages" aria-selected="false">Specials-3</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#tab-4" role="tab" aria-controls="v-pills-settings" aria-selected="false">Specials-4</a>
+                  </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                                <p>
+                                    <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nobis.
+                                        Vitae dolorum aliquid cupiditate porro accusamus reiciendis quasi excepturi
+                                        optio nesciunt tenetur? Iure doloremque minus</i><br><br>
+                                         A voluptatibus consequatur in 
+                                        numquam libero aliquam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quos laboriosam 
+                                        ipsa animi quasi vitae distinctio ut at architecto vero! Aspernatur harum quod 
+                                        sapiente sed, aut corrupti ducimus temporibus corporis incidunt iure.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="images/stew2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, reprehenderit.</h3>
+                                <p>
+                                    <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nobis.
+                                        Vitae dolorum aliquid cupiditate porro accusamus reiciendis quasi excepturi
+                                        optio nesciunt tenetur? Iure doloremque minus</i><br><br>
+                                         A voluptatibus consequatur in 
+                                        numquam libero aliquam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quos laboriosam 
+                                        ipsa animi quasi vitae distinctio ut at architecto vero! Aspernatur harum quod.
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="images/biryani.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>
+                                    <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nobis.
+                                        Vitae dolorum aliquid cupiditate porro accusamus reiciendis quasi excepturi
+                                        optio nesciunt tenetur? Iure doloremque minus</i><br><br>
+                                         A voluptatibus consequatur in 
+                                        numquam libero aliquam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quos laboriosam 
+                                        ipsa animi quasi vitae distinctio ut at architecto vero! Aspernatur harum quod 
+                                        sapiente sed, aut corrupti ducimus temporibus corporis incidunt iure.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sed!
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="images/chettinadu_final-modified.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                                <p>
+                                    <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nobis.
+                                        Vitae dolorum aliquid cupiditate porro accusamus reiciendis quasi excepturi
+                                        optio nesciunt tenetur? Iure doloremque minus</i><br><br>
+                                         A voluptatibus consequatur in 
+                                        numquam libero aliquam!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quos laboriosam 
+                                        ipsa animi quasi vitae distinctio ut at architecto vero!
+                                </p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="images/gallery_7_final-modified.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</section>
+<!-------------==================Specials end========================------------------->
+<!--------------------===============Footer====================---------------------------->
+<footer class="site-footer" id="footer-id">
+    <div class="container">
+        <div class="row justify-content-center pt-5 pb-5">
+          
+            <div class="col-md-3">
+              <h2 class="footer-heading mb-4">Follow Us</h2>
+              <p>A108 Adam Street
+                NY 535022, USA</p><br>
+                <p>Phone: +6465465465<br>
+                  Email: info@example.com</p><br>
+                <div class="row">
+                    <a href="#" class="mr-1 pl-2 pr-2"><i class='bx bxl-facebook-circle'></i></span></a>
+                    <a href="#" class="mr-1 pl-2 pr-2"><i class='bx bxl-instagram'></i></span></a>
+                    <a href="#" class="mr-1 pl-2 pr-2"><i class='bx bxl-linkedin-square' ></i></span></a>
+                  </div>    
+            </div>
+            <div class="col-md-3">
+              <h2 class="footer-heading mb-4">Quick Links</h2>
+              <ul class="list-unstyled text-secondary">
+                <li>About Us</li>
+                <li>Menu</li>
+                <li>Book a Table</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+                    <h2 class="footer-heading mb-4">Services</h2>
+                    <ul class="list-unstyled text-secondary">
+                      <li>Dine In</li>
+                      <li>Events with Us</li>
+                      <li>Catering</li>
+                    </ul>
+            </div>    
+            <div class="col-md-4">
+                <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <form action="#" method="post" class="subscription">
+                  <div class="input-group mb-3  d-flex align-items-stretch pt-3">
+                    <input type="text" class="form-control bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+                  </div>
+                </form>
+            </div>    
+        </div>
+      </div>
+</footer>
+
+<section id="copyrights-id">
+  <div class="container-fluid">
+    <div class="row pt-3 pb-3">
+      <div class="col-12 text-md-center text-left">
+        <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Vedanti Chavan All rights reserved
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+        <p>Designed By ....</p>
+      </div>
+</section>
+
+
+
+
+<!-------------------=============Footer end==================---------------------->
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="vendor/aos/aos.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/glightbox/js/glightbox.min.js"></script>
+<script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
+<script src="vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
